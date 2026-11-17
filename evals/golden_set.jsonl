@@ -1,0 +1,8 @@
+{"id": "sql-1", "type": "sql", "question": "How many orders have been placed in total?", "expect_tools": ["sql_agent"], "must_contain": []}
+{"id": "sql-2", "type": "sql", "question": "What are the top 5 product categories by number of items sold?", "expect_tools": ["sql_agent"], "must_contain": []}
+{"id": "sql-3", "type": "sql", "question": "Which 3 countries have the most registered users?", "expect_tools": ["sql_agent"], "must_contain": []}
+{"id": "doc-1", "type": "doc", "question": "What is the return window for most items?", "expect_tools": ["doc_agent"], "must_contain": ["30 days"]}
+{"id": "doc-2", "type": "doc", "question": "How long does a refund take after we receive a returned item?", "expect_tools": ["doc_agent"], "must_contain": ["5 to 7"]}
+{"id": "doc-3", "type": "doc", "question": "How long does standard shipping take?", "expect_tools": ["doc_agent"], "must_contain": ["3 to 5"]}
+{"id": "hyb-1", "type": "hybrid", "question": "What does our policy say about returns, and how many order items currently have the status Returned?", "expect_tools": ["sql_agent", "doc_agent"], "must_contain": ["30 days"]}
+{"id": "hyb-2", "type": "hybrid", "question": "How is revenue defined in our data dictionary, and what is total revenue by that definition?", "expect_tools": ["sql_agent", "doc_agent"], "must_contain": []}
